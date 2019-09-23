@@ -14,7 +14,7 @@ export const Numbers = (props) => {
   const [numberState, setNumberState] = React.useState(numbers);
   console.log(numberState);
 
-  const numberButtons = numberState.map(number=> (
+  const numberButtons = numberState.map(number => (
     <NumberButton number1={number}
     key={number}/>
   ));

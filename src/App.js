@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 
-import { Numbers } from './components/ButtonComponents/NumberButtons/Numbers.js';
-import { Operators } from './components/ButtonComponents/OperatorButtons/Operators.js';
-import { Specials } from './components/ButtonComponents/SpecialButtons/Specials.js';
+import {Numbers} from './components/ButtonComponents/NumberButtons/Numbers.js';
+import {Operators} from './components/ButtonComponents/OperatorButtons/Operators.js';
+import {Specials} from './components/ButtonComponents/SpecialButtons/Specials.js';
 
 import "./index.css";
 
@@ -21,25 +21,25 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
   return (
-    <div className="container">
-      <div className="logo-div">
+    <div className = "container">
+      <div className = "logo-div">
       <Logo />
       </div>
 
-      <div className="display-box">
+      <div className = "display-box">
           <div >
-            <input className="display"
+            <input className = "display"
              name="display" type="text" placeholder="0"></input>
           </div>
    </div>
 
-      <div className="App">
-        <div className="bigBox">
-       <div className="firstBox">
+      <div className = "App">
+        <div className = "bigBox">
+       <div className = "firstBox">
        <Specials/>
         <Numbers/>
         </div>
-        <div className="secondBox" >
+        <div className = "secondBox" >
         < Operators/>
       </div>
     </div>
