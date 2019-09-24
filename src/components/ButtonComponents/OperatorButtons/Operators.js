@@ -11,7 +11,7 @@ export const Operators = (props) => {
   // STEP 2 - add the imported data to state
 
   const [operatorState, setOperatorState] = React.useState(operators);
-  console.log(numberState);
+  console.log(operatorState);
 
   const operatorButtons = operatorState.map(operator  => (
     <OperatorButton operator1={operator.value}
