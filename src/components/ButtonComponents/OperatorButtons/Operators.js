@@ -4,8 +4,8 @@ import React from "react";
 
 //Import your array data to from the provided data file
 
-import {operators} from '../../../data.js';
-import {OperatorButton} from './OperatorButton.js';
+import { operators } from '../../../data.js';
+import { OperatorButton } from './OperatorButton.js';
 
 export const Operators = (props) => {
   // STEP 2 - add the imported data to state
@@ -14,8 +14,8 @@ export const Operators = (props) => {
   console.log(operatorState);
 
   const operatorButtons = operatorState.map(operator  => (
-    <OperatorButton operator1={operator.value}
-    key={operator.value}/>
+    <OperatorButton operator1 = {operator.value}
+    key = {operator.value}/>
   ));
   return (
     <div className = "operatorBox">
