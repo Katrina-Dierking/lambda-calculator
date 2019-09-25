@@ -1,15 +1,32 @@
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    margin: 0 auto;
+    max-width: 280px;
     border-radius: 15px;
-    border: 2px solid grey;
+    border: 1px solid grey;
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.logo {
+    width: 30%;
+    padding: 20px 100px 10px 15px; 
+}
+.logo-space{
+   margin:0px; 
+}
+
+.display-box {
+    margin: 0 15px;
+}
+
 .display {
     margin-top: 25px;
-    height: 100px;
-    width: 450px;
+    height: 35px;
+    width: 90%;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -18,5 +35,65 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 15px;
+    border: 1px solid black;
   }
+
+  .allBtnBox{
+    display: flex;
+    margin:0 15px 0 15px;
+
+}
+.spNumBox{
+    width:95%
+
+}
+
+.numbersBox{
+display:flex;
+flex-wrap: wrap;
+
+}
+.numBtn,
+.specialBtn,
+.oprBtn {
+  text-align: center;
+    border:1px solid rgb(70, 69, 69);
+    margin:3%;
+    border-radius: 50px;
+    color:white;
+    box-shadow: -1px 2px 4px rgb(37, 33, 33);
+    height: 37px;
+    font-weight:bold;
+}
+.numBtn{
+  background-color: DarkSlateBlue;
+  width:26%;
+
+
+}
+.numBtn:nth-child(10) {
+  width:60%;
+}
+.specialBtn{
+  background-color:rgb(85, 131, 218);
+  width:25%;
+
+}
+.oprBtn{
+  background-color: rgb(98, 180, 231);
+  width:81%;
+  margin-bottom:8px;
+
+}
+
+.secondBox{
+    width:30%;
+    margin-top:3%;
+}
+.operatorBox{
+  display: flex;
+  flex-direction: column;
+}	  
